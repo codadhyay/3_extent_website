@@ -2,96 +2,113 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark">
   <title>3_EXTENT</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-900">
   <!-- Header -->
   <div>
-    <div class="flex justify-between items-center px-20 py-3">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-20 py-4 bg-white shadow">
       <div><img src="./Assets/3extent.png" class="w-20" /></div>
-      <div class="">
-        <a href="#partnerWithUs" class="mr-5">Partner With Us</a>
-        <a href="#aboutUs" class="mr-5">About Us</a>
-        <a href="#contactUs">Contact Us</a>
-      </div>
-    </div>
-    <div class="bg-[url('./Assets/home1.jpg')] bg-cover bg-center h-96">
-      <div class="pt-52 pl-20">
-        <p class="text-white font-semibold text-2xl">Certified Second-Hand Mobiles </p>
-        <p class="text-white font-semibold text-2xl ">Fully tested, graded, and ready for resale</p>
+      <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 mt-3 md:mt-0">
+        <a href="#partnerWithUs" class="hover:text-blue-500">Partner With Us</a>
+        <a href="#aboutUs" class="hover:text-blue-500">About Us</a>
+        <a href="#contactUs" class="hover:text-blue-500">Contact Us</a>
       </div>
     </div>
 
+    <!-- Hero -->
+    <div class="bg-[url('./Assets/home1.jpg')] bg-cover bg-center h-96 relative">
+      <div class="absolute bottom-8 left-4 md:left-20">
+        <p class="text-white font-semibold text-xl md:text-2xl">Certified Second-Hand Mobiles</p>
+        <p class="text-white font-semibold text-xl md:text-2xl">Fully tested, graded, and ready for resale</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="w-[90%] mx-auto">
-      <div class="my-12 text font-semibold">
-        At 3_EXTENT Pvt. Ltd., we specialize in the bulk supply of high-quality, pre-owned
-        smartphones
-        to
-        resellers, retailers, and businesses across India. With a strong focus on quality, affordability, and trust,
-        we
-        help you grow your business by giving you access to the best devices at competitive wholesale prices.
+      <div class="my-12 font-semibold text-justify">
+        At 3_EXTENT Pvt. Ltd., we specialize in the bulk supply of high-quality, pre-owned smartphones to resellers,
+        retailers, and businesses across India. With a strong focus on quality, affordability, and trust, we help you
+        grow your business by giving you access to the best devices at competitive wholesale prices.
       </div>
-      <div class="my-12 flex gap-4 items-center">
-        <div class="w-[50%]">We specialize in B2B wholesale trading of high-quality second-hand and
-          refurbished mobile phones. Since our inception, we've been committed to delivering reliable, affordable, and
-          premium-grade devices to retailers, resellers, and bulk buyers across India.</div>
-        <div class="w-[50%]"><img src="./Assets/home2.webp" class="" /></div>
-      </div>
-      <div class="my-12 flex gap-4 items-center">
-        <div class="w-[50%]"><img src="./Assets/home3.webp" class="w-[100%]" /></div>
-        <div class="w-[50%]">With a deep understanding of the mobile market and strong supplier networks, we ensure that
-          every device we sell is thoroughly tested, quality-checked, and competitively priced. Our goal is to help our
-          clients maximize their margins while giving customers access to the latest smartphones at the best value.
+
+      <!-- Section 1 -->
+      <div class="my-12 flex flex-col md:flex-row gap-6 items-center">
+        <div class="w-full md:w-1/2 text-justify">
+          We specialize in B2B wholesale trading of high-quality second-hand and refurbished mobile phones. Since our
+          inception, we've been committed to delivering reliable, affordable, and premium-grade devices to retailers,
+          resellers, and bulk buyers across India.
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="./Assets/home2.webp" class="w-full h-auto rounded-md shadow" />
         </div>
       </div>
-      <div class="my-12 flex gap-4 items-center">
-        <div class="w-[50%]">In just a short span, we've built a reputation for trust, transparency, and timely
-          delivery,
-          selling thousands of units and serving a growing network of satisfied partners. Whether you are a local shop
-          owner or a large-scale distributor, we provide the products and service you can depend on.</div>
-        <div class="w-[50%]"><img src="./Assets/home4.webp" class="w-[100%]" /></div>
+
+      <!-- Section 2 -->
+      <div class="my-12 flex flex-col md:flex-row-reverse gap-6 items-center">
+        <div class="w-full md:w-1/2 text-justify">
+          With a deep understanding of the mobile market and strong supplier networks, we ensure that every device we
+          sell is thoroughly tested, quality-checked, and competitively priced. Our goal is to help our clients maximize
+          their margins while giving customers access to the latest smartphones at the best value.
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="./Assets/home3.webp" class="w-full h-auto rounded-md shadow" />
+        </div>
       </div>
+
+      <!-- Section 3 -->
+      <div class="my-12 flex flex-col md:flex-row gap-6 items-center">
+        <div class="w-full md:w-1/2 text-justify">
+          In just a short span, we've built a reputation for trust, transparency, and timely delivery, selling thousands
+          of units and serving a growing network of satisfied partners. Whether you are a local shop owner or a
+          large-scale distributor, we provide the products and service you can depend on.
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="./Assets/home4.webp" class="w-full h-auto rounded-md shadow" />
+        </div>
+      </div>
+
       <!-- Partner with us -->
       <div class="p-6 bg-white shadow-lg rounded-lg my-10" id="partnerWithUs">
-        <div class="text-3xl font-serief text-center text-gray-800 mb-6">Partner With Us</div>
+        <div class="text-3xl font-semibold text-center text-gray-800 mb-6">Partner With Us</div>
         <div class="text-lg text-gray-600 text-center mb-8">
           Looking to stock up on reliable smartphones for resale? Partner with <strong>3_EXTENT Pvt. Ltd.</strong> and
-          get
-          access
-          to a
-          consistent,
-          profitable, and growing supply chain.
+          get access to a consistent, profitable, and growing supply chain.
         </div>
       </div>
 
-      <!-- About US -->
+      <!-- About Us -->
       <div id="aboutUs">
         <div class="text-3xl font-semibold text-center text-gray-800 mb-6">About Us</div>
 
-        <div class="w-full flex justify-evenly mt-10">
-          <div class="w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5">
+        <div class="w-full flex flex-col md:flex-row justify-evenly items-center gap-6 mt-10">
+          <!-- CEO -->
+          <div class="w-[90%] md:w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5 bg-white">
             <img src="./Assets/CEO.jpeg" class="w-48 h-48 rounded-full object-cover object-top" />
-            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Executive Officer(CEO)</div>
-            <div class="my-1  text-lg">Hrushikesh Tangadkar</div>
+            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Executive Officer (CEO)</div>
+            <div class="my-1 text-lg">Hrushikesh Tangadkar</div>
           </div>
-          <div class="w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5">
+          <!-- CTO -->
+          <div class="w-[90%] md:w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5 bg-white">
             <img src="./Assets/CTO.jpg" class="w-48 h-48 rounded-full object-cover object-top" />
-            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Technology Officer(CTO)</div>
+            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Technology Officer (CTO)</div>
             <div class="my-1 text-lg">Dipak Dhawade</div>
           </div>
-          <div class="w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5">
+          <!-- CGO -->
+          <div class="w-[90%] md:w-[25%] border shadow-lg rounded-[10px] flex flex-col items-center p-5 bg-white">
             <img src="./Assets/CGO.jpeg" class="w-48 h-48 rounded-full object-cover object-top" />
-            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Growth Officer(CGO)</div>
+            <div class="mt-3 font-semibold text-lg text-center">FOUNDER, Chief Growth Officer (CGO)</div>
             <div class="my-1 text-lg">Vinod Gade</div>
-
           </div>
         </div>
-        <!-- Our values and mission -->
+
+        <!-- Mission and Values -->
         <div class="p-8 bg-white shadow-lg rounded-lg mt-20">
           <div class="text-3xl font-semibold text-center text-gray-800 mb-6">Our Mission</div>
           <div class="flex justify-center mb-10">
@@ -111,23 +128,22 @@
         </div>
       </div>
 
-      <!-- Contact US -->
+      <!-- Contact Us -->
       <div class="p-8 bg-white shadow-lg rounded-lg mt-20" id="contactUs">
-        <div>
-          <div class="text-3xl font-semibold text-center text-gray-800 mb-6">Contact Us</div>
-          <div class="flex justify-center mb-8">
-            <div class="text-center text-black-700 max-w-3xl">
-              We’re here to help you with bulk orders, partnership inquiries, or any questions about our products
-              and
-              services. Get in touch with us through the details below — our team will respond promptly.
-            </div>
+        <div class="text-3xl font-semibold text-center text-gray-800 mb-6">Contact Us</div>
+        <div class="flex justify-center mb-8">
+          <div class="text-center text-gray-700 max-w-3xl">
+            We’re here to help you with bulk orders, partnership inquiries, or any questions about our products and
+            services. Get in touch with us through the details below — our team will respond promptly.
           </div>
         </div>
-        <div class="flex justify-between w-[100%] gap-8 text-sm text-black-800">
-          <div class="w-1/3 bg-gray-50 p-4 rounded shadow">
-            <div class="text-xl font-semibold mb-3 flex items-center gap-2"><i class="fa fa-map-marker text-red-600"
-                aria-hidden="true"></i> Office
-              Address</div>
+
+        <div class="flex flex-col md:flex-row justify-between gap-8 text-sm text-gray-800">
+          <!-- Address -->
+          <div class="w-full md:w-1/3 bg-gray-50 p-4 rounded shadow">
+            <div class="text-xl font-semibold mb-3 flex items-center gap-2">
+              <i class="fa fa-map-marker text-red-600" aria-hidden="true"></i> Office Address
+            </div>
             <p>
               3_EXTENT Pvt. Ltd.<br />
               Shop No. 310, Deluxe Mall,<br />
@@ -135,7 +151,8 @@
               Maharashtra, India
             </p>
           </div>
-          <div class="w-1/3 bg-gray-50 p-4 rounded shadow">
+          <!-- Contact -->
+          <div class="w-full md:w-1/3 bg-gray-50 p-4 rounded shadow">
             <div class="text-xl font-semibold mb-3 flex items-center gap-2">
               <i class="fa fa-user-circle-o text-blue-500"></i> Contact Us
             </div>
@@ -146,17 +163,19 @@
               <i class="fa fa-envelope text-yellow-600"></i> dipak.dhawade@3extent.com
             </p>
           </div>
-          <div class="w-1/3 bg-gray-50 p-4 rounded shadow">
+
+          <!-- Business Hours -->
+          <div class="w-full md:w-1/3 bg-gray-50 p-4 rounded shadow">
             <div class="text-xl font-semibold mb-3 flex items-center gap-2">
               <i class="fa fa-clock-o text-purple-500"></i> Business Hours
             </div>
             <p>Monday – Saturday: 10:00 AM – 7:00 PM</p>
             <p>Sunday: Closed</p>
           </div>
-
         </div>
       </div>
     </div>
+  </div>
 </body>
 
 </html>
